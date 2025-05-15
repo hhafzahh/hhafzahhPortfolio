@@ -3,6 +3,7 @@ import "./App.css";
 import { Navbar } from "./components/NavBar";
 import { MobileMenu } from "./components/MobileMenu";
 import { Home } from "./components/sections/Home";
+import { About } from "./components/sections/About";
 
 function App() {
   //menuOpen - a boolean that tells whether the menu is open(t) or closed(f)
@@ -15,6 +16,7 @@ function App() {
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Home />
+      <About />
     </>
   );
 }
