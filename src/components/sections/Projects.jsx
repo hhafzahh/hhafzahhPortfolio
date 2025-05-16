@@ -33,11 +33,12 @@ const projects = [
   {
     id: 3,
     title: "Farm Prediction",
-    description: "Predicting Crop Prices",
+    description:
+      "Built a predictive model to analyze how precipitation and temperature impact crop yields, helping quantify climate change effects on food security.",
     image: cropImg,
-    tags: ["Python", "React", "Kaggle"],
+    tags: ["Python", "Jupyter Notebook", "React", "Kaggle"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/hhafzahh/DDW_DTP_2024",
   },
 
   {
@@ -55,7 +56,7 @@ const projects = [
     id: 5,
     title: "Simulation of Major Project",
     description:
-      "A automated ticketing management web application which stores,cleans data and displays data in a visualization.",
+      "Automated ticketing system that processes, cleans, and visualizes data, with reports sent via email in a fully containerized CI/CD pipeline.",
     image: simulationImg,
     tags: ["MEAN stack", "Python", "Docker", "MailGun", "Jenkins"],
     demoUrl: "#",
@@ -76,27 +77,30 @@ const projects = [
   {
     id: 7,
     title: "E-dentify",
-    description: "Helping Disabilites",
+    description:
+      "E-dentify is a facial recognition system where the AI can analyse and capture images through the use of computer vision, and store the image data of the users into a database which would then be used to accurately identify users.",
     image: disabilityImg,
     tags: ["HTML", "Heroku", "Firebase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://github.com/Geekout-Team-E/project-firstresponder/",
+    githubUrl: "https://github.com/Geekout-Team-E/project-firstresponder/",
   },
 
   {
     id: 8,
     title: "SgHotelly",
-    description: "Hotel Application",
+    description:
+      "SGHotelly is a MEAN stack web application developed in response to the Covid-19 impact on Singapore’s hotel industry. It enables locals to book hotels for remote work or staycations, with features like online confirmations and flexible cancellations",
     image: hotelImg,
     tags: ["MEAN stack", "Stripe", "Google Auth"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://github.com/hhafzahh/sgHotelly",
+    githubUrl: "https://github.com/hhafzahh/sgHotelly",
   },
 
   {
     id: 9,
     title: "Juz Trackers",
-    description: "Motivational Quran Trackers for kids",
+    description:
+      "Created motivational Quran progress tracker designed for kids, making memorization fun and engaging through visual tracking.",
     image: juztrackerImg,
     tags: ["Community", "Canva", "Design"],
     demoUrl: "#",
@@ -118,13 +122,13 @@ export const Projects = () => {
           crafted with attention to detail, performance, and user experience.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {projects.map((project, key) => (
             <div
               key={key}
-              className="border border-gray-900/10 group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+              className="border border-gray-900/10 group bg-card rounded-lg overflow-hidden shadow-xs card-hover bg-white/5 backdrop-blur-md"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-48 overflow-hidden ">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -133,14 +137,6 @@ export const Projects = () => {
               </div>
 
               <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
                 <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
@@ -162,6 +158,14 @@ export const Projects = () => {
                       <Github size={20} />
                     </a>
                   </div>
+                </div>
+
+                <div className="flex flex-wrap gap-2 mb-4 mt-5">
+                  {project.tags.map((tag) => (
+                    <span className="bg-white/10 text-white py-1 px-3 rounded-full text-sm hover:bg-blue-100/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+                      {tag}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>

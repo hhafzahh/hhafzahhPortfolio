@@ -32,7 +32,7 @@ export const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(255,255,255,0.05)] transition-all bg-white/5 backdrop-blur-md">
-              <div className="w-10 h-10 bg-orange-100/20 rounded-full flex items-center justify-center mb-4">
+              <div className="w-10 h-10 bg-green-100/20 rounded-full flex items-center justify-center mb-4">
                 <BookOpen className="text-green-500" size={20} />
               </div>
               <h3 className="text-xl font-bold text-white ">Education</h3>
@@ -44,7 +44,7 @@ export const About = () => {
             </div>
 
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(255,255,255,0.05)] transition-all bg-white/5 backdrop-blur-md">
-              <div className="w-10 h-10 bg-orange-100/20 rounded-full flex items-center justify-center mb-4">
+              <div className="w-10 h-10 bg-green-100/20 rounded-full flex items-center justify-center mb-4">
                 <Briefcase className="text-green-500" size={20} />
               </div>
               <h3 className="text-xl font-bold mb-2 text-white">Experience</h3>
@@ -54,7 +54,7 @@ export const About = () => {
             </div>
 
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(255,255,255,0.05)] transition-all bg-white/5 backdrop-blur-md">
-              <div className="w-10 h-10 bg-orange-100/20 rounded-full flex items-center justify-center mb-4">
+              <div className="w-10 h-10 bg-green-100/20 rounded-full flex items-center justify-center mb-4">
                 <Users className="text-green-500" size={20} />
               </div>
               <h3 className="text-xl font-bold  text-white">Community</h3>
