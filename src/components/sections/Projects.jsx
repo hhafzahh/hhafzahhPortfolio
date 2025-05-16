@@ -67,7 +67,7 @@ const projects = [
     id: 6,
     title: "Todobuddy",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Developed a feature-rich todo-list app tailored for students, using Java in Android Studio for the native Android version and Angular with Ionic for the hybrid version. Both versions share the same backend, utilizing Firebase and Firestore for data management.",
     image: todoBuddyImg,
     tags: ["Angular", "Java", "Ionic", "Google Auth", "API"],
     demoUrl: "#",
