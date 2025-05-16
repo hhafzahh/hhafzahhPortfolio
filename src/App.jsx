@@ -4,6 +4,9 @@ import { Navbar } from "./components/NavBar";
 import { MobileMenu } from "./components/MobileMenu";
 import { Home } from "./components/sections/Home";
 import { About } from "./components/sections/About";
+import { Projects } from "./components/sections/Projects";
+import { Contact } from "./components/sections/Contact";
+import Particle from "./components/sections/Particle";
 
 function App() {
   //menuOpen - a boolean that tells whether the menu is open(t) or closed(f)
@@ -13,10 +16,17 @@ function App() {
   return (
     <>
       {/* passes 2 props to the component by passing the current state and passing the function to change it */}
-      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Home />
-      <About />
+      <div style={{ position: "relative", minHeight: "100vh" }}>
+        <main style={{ position: "relative", zIndex: 1 }}>
+          <Particle />
+          <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+          <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+          <Home />
+          <About />
+          <Projects />
+          <Contact />
+        </main>
+      </div>
     </>
   );
 }

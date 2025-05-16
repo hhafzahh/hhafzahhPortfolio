@@ -1,3 +1,5 @@
+import { BookOpen, Briefcase, Award } from "lucide-react";
+
 export const About = () => {
   const frontendSkills = ["Angular", "React", "Svelte", "TailWindCSS"];
   const backendSkills = ["SQL", "Node.js", "MongoDB", "Supabase"];
@@ -10,10 +12,10 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen flex items-center justify-center py-24"
     >
-      <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-green-500 to-cyan-400 bg-clip-text text-transparent text-center">
+      <div className="max-w-5xl w-full px-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center bg-gradient-to-r from-green-500 to-cyan-400 bg-clip-text text-transparent justify-center">
           {" "}
           About Me
         </h2>
@@ -24,14 +26,16 @@ export const About = () => {
             applications and creating innovative solutions.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {skillGroups.map(({ title, skills }) => (
               <div
                 key={title}
-                className="rounded-xl p-6 hover:-translate-y-1 transition-all"
+                className="rounded-xl p-6 border border-white hover:-translate-y-1 transition-all"
               >
-                <h3 className="text-xl font-bold mb-4">{title}</h3>
-                <div className="flex flex-wrap gap-2">
+                <h3 className="text-xl font-bold mb-4  bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+                  {title}
+                </h3>
+                <div className="flex flex-wrap gap-2 ">
                   {skills.map((tech) => (
                     <span
                       key={tech}
@@ -43,33 +47,41 @@ export const About = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
+          </div> */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-          <div className="p-6 rounded-xl border-green-900/10 border hover:-translate-y-1 transition-all">
-            <h3 className="text-xl font-bold ">Education</h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
-              <li>
-                <strong> B.S. in Computer Science </strong> - Singapore
-                University of Technology & Design (2023 to Present)
-              </li>
-              <li>
-                Relevant Coursework: Data Structures, Information Systems &
-                Programming
-              </li>
-            </ul>
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(255,255,255,0.05)] transition-all bg-white/5 backdrop-blur-md">
+              <div className="w-10 h-10 bg-orange-100/20 rounded-full flex items-center justify-center mb-4">
+                <BookOpen className="text-green-500" size={20} />
+              </div>
+              <h3 className="text-xl font-bold text-white ">Education</h3>
+              <p className="text-gray-300 text-sm">
+                B.Sc Computer Science in Singapore University of Technology &
+                Design, Diploma in Information & Technology in Temasek
+                Polytechnic
+              </p>
+            </div>
 
-          <div className="p-6 rounded-xl border-green-900/10 border hover:-translate-y-1 transition-all">
-            <h3 className="text-xl font-bold ">Experience</h3>
-            <div className="space-y-4 text-gray-300">
-              <div>
-                <h4 className="font-semibold">
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(255,255,255,0.05)] transition-all bg-white/5 backdrop-blur-md">
+              <div className="w-10 h-10 bg-orange-100/20 rounded-full flex items-center justify-center mb-4">
+                <Briefcase className="text-green-500" size={20} />
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-white">Experience</h3>
+              <p className="text-gray-300 text-sm">
+                Software Engineer Intern at Accenture
+              </p>
+            </div>
+
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(255,255,255,0.05)] transition-all bg-white/5 backdrop-blur-md">
+              <div className="w-10 h-10 bg-orange-100/20 rounded-full flex items-center justify-center mb-4">
+                <BookOpen className="text-green-500" size={20} />
+              </div>
+              <h3 className="text-xl font-bold  text-white">Community</h3>
+              <div className="space-y-4 text-gray-300">
+                <p className="text-sm text-gray-300">
                   {" "}
-                  Software Engineer Intern at Accenture (Jun 22 to Feb 23){" "}
-                </h4>
-                <p> Developed & enhance visualizations using QlikSense code</p>
+                  Creating engaging experience with the Quran for kids
+                </p>
               </div>
             </div>
           </div>
