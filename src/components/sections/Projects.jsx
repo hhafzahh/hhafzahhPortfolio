@@ -5,6 +5,9 @@ import todoBuddyImg from "../../assets/todoBuddy.jpg";
 import simulationImg from "../../assets/flowofsimulation.png";
 import cropImg from "../../assets/crop.jpeg";
 import doorbellImg from "../../assets/doorbell.jpg";
+import juztrackerImg from "../../assets/juztracker.png";
+import disabilityImg from "../../assets/problemDisability.png";
+import hotelImg from "../../assets/hotel.jpeg";
 
 const projects = [
   {
@@ -68,6 +71,36 @@ const projects = [
     tags: ["Angular", "Java", "Ionic", "Google Auth", "API"],
     demoUrl: "#",
     githubUrl: "https://github.com/hhafzahh/todoBuddy",
+  },
+
+  {
+    id: 7,
+    title: "E-dentify",
+    description: "Helping Disabilites",
+    image: disabilityImg,
+    tags: ["HTML", "Heroku", "Firebase"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+
+  {
+    id: 8,
+    title: "SgHotelly",
+    description: "Hotel Application",
+    image: hotelImg,
+    tags: ["MEAN stack", "Stripe", "Google Auth"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+
+  {
+    id: 9,
+    title: "Juz Trackers",
+    description: "Motivational Quran Trackers for kids",
+    image: juztrackerImg,
+    tags: ["Community", "Canva", "Design"],
+    demoUrl: "#",
+    githubUrl: "#",
   },
 ];
 
