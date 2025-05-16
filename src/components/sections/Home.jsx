@@ -7,10 +7,10 @@ export const Home = () => {
       className="min-h-screen bg-background text-foreground overflow-x-hidden flex items-center justify-center"
     >
       <Particle />
-      <div className="text-center z-10 px-4">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-green-500 to-cyan-400 bg-clip-text text-transparent leading-right">
-          Hi, I'm Hafsah
-        </h1>
+      <div className="text-center z-10 px-4 md:px-8 max-w-2xl w-full mx-auto">
+        <p className="text-2xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-green-500 to-cyan-400 bg-clip-text text-transparent leading-right">
+          I'm a software developer
+        </p>
 
         <p className="text-white text-lg mb-8 max-w-lg mx-auto">
           Hello! I'm Hafsah Hussain, currently pursuing computer science degree

@@ -1,12 +1,16 @@
-import { BookOpen, Briefcase, Award } from "lucide-react";
+import { BookOpen, Briefcase, Award, Users } from "lucide-react";
 
 export const About = () => {
   const frontendSkills = ["Angular", "React", "Svelte", "TailWindCSS"];
   const backendSkills = ["SQL", "Node.js", "MongoDB", "Supabase"];
+  const designSkills = ["Figma", "Canva", "Adobe"];
+  const cloudSkills = ["Docker", "Jenkins", "AWS"];
 
   const skillGroups = [
     { title: "Frontend", skills: frontendSkills },
     { title: "Backend", skills: backendSkills },
+    { title: "Design", skills: designSkills },
+    { title: "Cloud/Deployment", skills: cloudSkills },
   ];
 
   return (
@@ -25,29 +29,6 @@ export const About = () => {
             Passionate developer with expertise in building scalable web
             applications and creating innovative solutions.
           </p>
-
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {skillGroups.map(({ title, skills }) => (
-              <div
-                key={title}
-                className="rounded-xl p-6 border border-white hover:-translate-y-1 transition-all"
-              >
-                <h3 className="text-xl font-bold mb-4  bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-                  {title}
-                </h3>
-                <div className="flex flex-wrap gap-2 ">
-                  {skills.map((tech) => (
-                    <span
-                      key={tech}
-                      className="bg-white/10 text-white py-1 px-3 rounded-full text-sm hover:bg-blue-100/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div> */}
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(255,255,255,0.05)] transition-all bg-white/5 backdrop-blur-md">
@@ -74,7 +55,7 @@ export const About = () => {
 
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(255,255,255,0.05)] transition-all bg-white/5 backdrop-blur-md">
               <div className="w-10 h-10 bg-orange-100/20 rounded-full flex items-center justify-center mb-4">
-                <BookOpen className="text-green-500" size={20} />
+                <Users className="text-green-500" size={20} />
               </div>
               <h3 className="text-xl font-bold  text-white">Community</h3>
               <div className="space-y-4 text-gray-300">
@@ -84,6 +65,32 @@ export const About = () => {
                 </p>
               </div>
             </div>
+          </div>
+
+          <h2 className="text-xl font-bold mb-9 mt-5  bg-gradient-to-r from-green-500 to-cyan-400 bg-clip-text text-transparent">
+            Skills
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {skillGroups.map(({ title, skills }) => (
+              <div
+                key={title}
+                className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(255,255,255,0.05)] transition-all bg-white/5 backdrop-blur-md"
+              >
+                <h3 className="text-xl font-bold mb-4  bg-gradient-to-r from-teal-500 to-cyan-100 bg-clip-text text-transparent">
+                  {title}
+                </h3>
+                <div className="flex flex-wrap gap-2 ">
+                  {skills.map((tech) => (
+                    <span
+                      key={tech}
+                      className="bg-white/10 text-white py-1 px-3 rounded-full text-sm hover:bg-blue-100/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

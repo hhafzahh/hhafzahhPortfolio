@@ -11,7 +11,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           {/* navigate to home if clicked that */}
           <a href="#home" className="font-mono text-xl font-bold text-white">
             {" "}
-            hhafzahh<span className="text-gray-800">.tech</span>{" "}
+            hhafzahh<span className="text-gray-800">.me</span>{" "}
           </a>
 
           {/* hamburger - mobile menu , if u click on the hamburger icon, menuopens.. */}
