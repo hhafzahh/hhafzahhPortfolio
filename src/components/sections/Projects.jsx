@@ -1,7 +1,7 @@
 import { ArrowBigRight, ExternalLink, Github } from "lucide-react";
 import taskTalesImg from "../../assets/taskTales.png";
 import lccWebImg from "../../assets/lcc_web.png";
-import todoBuddyImg from "../../assets/todoBuddy.jpg";
+import todoBuddyImg from "../../assets/todobuddy.jpg";
 import simulationImg from "../../assets/flowofsimulation.png";
 import cropImg from "../../assets/crop.jpeg";
 import doorbellImg from "../../assets/doorbell.jpg";
