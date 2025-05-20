@@ -1,14 +1,35 @@
 import { BookOpen, Briefcase, Award, Users } from "lucide-react";
 
 export const About = () => {
-  const frontendSkills = ["Angular", "React", "Svelte", "TailWindCSS"];
-  const backendSkills = ["SQL", "Node.js", "MongoDB", "Supabase"];
+  const frontendSkills = [
+    "Angular",
+    "React",
+    "Svelte",
+    "TailWindCSS",
+    "Python",
+    "Java",
+    "HTML",
+    "JavaScript",
+    "TypeScript",
+  ];
+  const backendSkills = [
+    "MySQL",
+    "Microsoft SQL Server",
+    "Node.js",
+    "MongoDB",
+    "Firebase",
+    "FireStore",
+    "Supabase",
+  ];
   const designSkills = ["Figma", "Canva", "Adobe"];
+  const dataSkills = ["Python", "KNIME", "Power BI", "Tableau", "QlikSense"];
+
   const cloudSkills = ["Docker", "Jenkins", "AWS"];
 
   const skillGroups = [
     { title: "Frontend", skills: frontendSkills },
     { title: "Backend", skills: backendSkills },
+    { title: "Data", skills: dataSkills },
     { title: "Design", skills: designSkills },
     { title: "Cloud/Deployment", skills: cloudSkills },
   ];

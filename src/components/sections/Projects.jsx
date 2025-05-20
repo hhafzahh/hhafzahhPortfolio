@@ -17,8 +17,8 @@ const projects = [
       "A gamified productivity app designed to incentivize good habits in task management, through engaging gameplay and intuitive interface.",
     image: taskTalesImg,
     tags: ["Java", "Android Studio", "Firebase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://youtu.be/OMz_pUbHsYY",
+    githubUrl: "https://github.com/aaj1510/tasktales",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const projects = [
       "Built a predictive model to analyze how precipitation and temperature impact crop yields, helping quantify climate change effects on food security.",
     image: cropImg,
     tags: ["Python", "Jupyter Notebook", "React", "Kaggle"],
-    demoUrl: "#",
+    demoUrl: "https://github.com/hhafzahh/DDW_DTP_2024",
     githubUrl: "https://github.com/hhafzahh/DDW_DTP_2024",
   },
 
@@ -47,8 +47,8 @@ const projects = [
     description:
       "A simple but yet comprehensive web application that works like a doorbell but when capturing the image through hardware camera, you need to upload your image to check.",
     image: doorbellImg,
-    tags: ["AWS", "HTML", "JS"],
-    demoUrl: "#",
+    tags: ["AWS", "HTML", "JS", "OpenCV"],
+    demoUrl: "https://youtu.be/vko8BLuxjz0?feature=shared",
     githubUrl: "https://github.com/hhafzahh/smartDoorbell",
   },
 
@@ -59,7 +59,7 @@ const projects = [
       "Automated ticketing system that processes, cleans, and visualizes data, with reports sent via email in a fully containerized CI/CD pipeline.",
     image: simulationImg,
     tags: ["MEAN stack", "Python", "Docker", "MailGun", "Jenkins"],
-    demoUrl: "#",
+    demoUrl: "https://youtu.be/ncJ4HbZ0J6U?feature=shared",
     githubUrl: "https://github.com/hhafzahh/Simulation",
   },
 
@@ -69,8 +69,8 @@ const projects = [
     description:
       "Developed a feature-rich todo-list app tailored for students, using Java in Android Studio for the native Android version and Angular with Ionic for the hybrid version. Both versions share the same backend, utilizing Firebase and Firestore for data management.",
     image: todoBuddyImg,
-    tags: ["Angular", "Java", "Ionic", "Google Auth", "API"],
-    demoUrl: "#",
+    tags: ["Angular", "Java", "Capacitor by Ionic", "Google Auth", "API"],
+    demoUrl: "https://youtu.be/ibiQSxHLXGM?feature=shared",
     githubUrl: "https://github.com/hhafzahh/todoBuddy",
   },
 
@@ -78,9 +78,9 @@ const projects = [
     id: 7,
     title: "E-dentify",
     description:
-      "E-dentify is a facial recognition system where the AI can analyse and capture images through the use of computer vision, and store the image data of the users into a database which would then be used to accurately identify users.",
+      "E-dentify is a facial recognition system where the AI can analyse and capture images through the use of computer vision, and store the image data of the users into a database which would then be used to accurately identify users. This project was created during 3-day Geekout Hackaathon",
     image: disabilityImg,
-    tags: ["HTML", "Heroku", "Firebase"],
+    tags: ["HTML", "Heroku", "Firebase", "OpenCV"],
     demoUrl: "https://github.com/Geekout-Team-E/project-firstresponder/",
     githubUrl: "https://github.com/Geekout-Team-E/project-firstresponder/",
   },
@@ -103,8 +103,10 @@ const projects = [
       "Created motivational Quran progress tracker designed for kids, making memorization fun and engaging through visual tracking.",
     image: juztrackerImg,
     tags: ["Community", "Canva", "Design"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl:
+      "https://www.canva.com/design/DAGnext_8RQ/uUhmYVsC3gWAjEoWjfpOUg/edit?utm_content=DAGnext_8RQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    githubUrl:
+      "https://www.canva.com/design/DAGnext_8RQ/uUhmYVsC3gWAjEoWjfpOUg/edit?utm_content=DAGnext_8RQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
   },
 ];
 
