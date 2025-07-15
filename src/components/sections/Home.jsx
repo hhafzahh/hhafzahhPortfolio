@@ -9,7 +9,7 @@ export const Home = () => {
       <Particle />
       <div className="text-center z-10 px-4 md:px-8 max-w-2xl w-full mx-auto">
         <p className="text-2xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-green-500 to-cyan-400 bg-clip-text text-transparent leading-right">
-          Aspiring Full-Stack Developer
+          Aspiring Software Engineer
         </p>
 
         <p className="text-white text-lg mb-8 max-w-lg mx-auto">

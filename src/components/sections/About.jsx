@@ -47,8 +47,8 @@ export const About = () => {
 
         <div className="rounded-xl p-8 border-green-900/10 border hover:-translate-y-1 transition-all">
           <p className="text-gray-300 mb-6">
-            Passionate developer with expertise in building scalable web
-            applications and creating innovative solutions.
+            Passionate developer with expertise in building scalable web &
+            mobile applications and creating innovative solutions.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">

@@ -14,7 +14,7 @@ const projects = [
     id: 1,
     title: "Task Tales",
     description:
-      "A gamified productivity app designed to incentivize good habits in task management, through engaging gameplay and intuitive interface.",
+      "A gamified productivity app designed to incentivize good habits in task management, through engaging gameplay and intuitive interface. Awarded the Honorable Mention Singtel Project award",
     image: taskTalesImg,
     tags: ["Java", "Android Studio", "Firebase"],
     demoUrl: "https://youtu.be/OMz_pUbHsYY",
