@@ -137,7 +137,7 @@ export const projects: Project[] = [
   },
   {
     id: nanoid(),
-    title: "Ascenda Hotel Booking Website",
+    title: "Ascenda Hotel Booking",
     description:
       "A full-stack hotel booking platform using the MERN stack, integrating real-time Ascenda API data for the hotel search results feature with advanced multi-filtering, sorting, and seamless navigation to hotel details",
     image: ascendaHotelImg,
