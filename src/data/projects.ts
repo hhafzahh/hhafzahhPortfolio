@@ -46,7 +46,7 @@ export const projects: Project[] = [
     tags: ["Svelte", "TailwindCSS", "Supabase"],
     demoUrl: "https://lcc.sutd.edu.sg/",
     githubUrl: "https://github.com/hhafzahh/LCC_Website",
-    createdAt: "2024-08-20",
+    createdAt: "2024-12-20",
     featured: true,
   },
   {
