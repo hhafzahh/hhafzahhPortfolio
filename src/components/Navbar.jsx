@@ -5,61 +5,31 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8) backdrop-blur-lg border-b border-white/10 shadow-lg">
+    <nav className="fixed top-0 w-full z-40 bg-[#fafaf8]/95 backdrop-blur-lg border-b border-gray-200 shadow-sm">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          {/* navigate to home if clicked that */}
-          <a href="#home" className="font-mono text-xl font-bold text-white">
-            {" "}
-            hhafzahh<span className="text-gray-800">.me</span>{" "}
+          <a href="#home" className="font-mono text-xl font-bold text-[#1a1a1a]">
+            hhafzahh<span className="text-[#9b7f5e]">.me</span>
           </a>
 
-          {/* hamburger - mobile menu , if u click on the hamburger icon, menuopens.. */}
           <div
-            className="w-7 h-5 relative cursor-pointer z-4  md:hidden"
+            className="w-7 h-5 relative cursor-pointer z-4 md:hidden text-[#1a1a1a]"
             onClick={() => setMenuOpen((prev) => !prev)}
           >
             &#9776;
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#home"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
-              {" "}
-              Home{" "}
-            </a>
+            <a href="#home" className="text-[#4b5563] hover:text-[#1a1a1a] transition-colors">Home</a>
           </div>
-
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#about"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
-              {" "}
-              About{" "}
-            </a>
+            <a href="#about" className="text-[#4b5563] hover:text-[#1a1a1a] transition-colors">About</a>
           </div>
-
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#projects"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
-              {" "}
-              Projects{" "}
-            </a>
+            <a href="#projects" className="text-[#4b5563] hover:text-[#1a1a1a] transition-colors">Projects</a>
           </div>
-
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#contact"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
-              {" "}
-              Contact{" "}
-            </a>
+            <a href="#contact" className="text-[#4b5563] hover:text-[#1a1a1a] transition-colors">Contact</a>
           </div>
         </div>
       </div>

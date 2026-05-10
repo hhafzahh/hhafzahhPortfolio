@@ -11,17 +11,20 @@ import juztrackerImg from "../assets/juztracker.png";
 import disabilityImg from "../assets/problemDisability.png";
 import hotelImg from "../assets/hotel.jpeg";
 import ascendaHotelImg from "../assets/ascendaImg.png";
+import ixDimensionImg from "../assets/IX_DIMENSION.png";
 
 export type Project = {
   id: string;
   title: string;
   description: string;
-  image: string;           
+  image: string;
   tags: string[];
   demoUrl?: string;
   githubUrl?: string;
-  createdAt: string;      
+  createdAt: string;
   featured?: boolean;
+  award?: string;
+  isLive?: boolean;
 };
 
 export const projects: Project[] = [
@@ -34,8 +37,9 @@ export const projects: Project[] = [
     tags: ["Java", "Android Studio", "Firebase"],
     demoUrl: "https://youtu.be/OMz_pUbHsYY",
     githubUrl: "https://github.com/aaj1510/tasktales",
-    createdAt: "2025-01-01",
+    createdAt: "2025-10-01",
     featured: true,
+    award: "Singtel Project Award",
   },
   {
     id: nanoid(),
@@ -46,8 +50,9 @@ export const projects: Project[] = [
     tags: ["Svelte", "TailwindCSS", "Supabase"],
     demoUrl: "https://lcc.sutd.edu.sg/",
     githubUrl: "https://github.com/hhafzahh/LCC_Website",
-    createdAt: "2024-12-20",
+    createdAt: "2025-09-01",
     featured: true,
+    isLive: true,
   },
   {
     id: nanoid(),
@@ -146,18 +151,50 @@ export const projects: Project[] = [
       "https://youtu.be/6bo0VFZbQjs",
     githubUrl:
       "https://github.com/yyyyii/esc-project-c3t7",
-    createdAt: "2025-05-10",
+    createdAt: "2025-11-01",
     featured: true,
   },
- 
+  {
+    id: nanoid(),
+    title: "Diabetic Retinopathy Detection",
+    description:
+      "Deep learning system for detecting severe Diabetic Retinopathy from fundus images, benchmarking six model architectures including Attention U-Net, Residual U-Net, and EfficientNet-B0 using PyTorch.",
+    image: "https://plus.unsplash.com/premium_photo-1664299267040-5be8e3f3c057?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    tags: ["Python", "PyTorch", "Deep Learning", "U-Net", "Medical Imaging", "Jupyter"],
+    demoUrl: "https://github.com/YoybE/DiabeticRetinopathyDL",
+    githubUrl: "https://github.com/YoybE/DiabeticRetinopathyDL",
+    createdAt: "2025-12-01",
+    featured: true,
+  },
+  {
+    id: nanoid(),
+    title: "PLC Graphing Calculator",
+    description:
+      "A C-based graphing calculator that tokenizes, parses, and evaluates mathematical expressions via AST construction. Supports standard computation, symbolic differentiation, and interactive graph rendering.",
+    image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80",
+    tags: ["C", "AST", "Parsing", "Algorithms", "Makefile"],
+    demoUrl: "https://github.com/STHSCare12/PLC_Graphing_Calculator",
+    githubUrl: "https://github.com/STHSCare12/PLC_Graphing_Calculator",
+    createdAt: "2024-12-01",
+    featured: true,
+  },
+  {
+    id: nanoid(),
+    title: "IX-Dimension",
+    description:
+      "Interactive light and laser installation using Arduino and ESP32 wireless communication (ESP-NOW), combining dry ice, lasers, and LEDs into a programmable physical computing experience.",
+    image: ixDimensionImg,
+    tags: ["C++", "Arduino", "ESP32", "IoT"],
+    demoUrl: "https://github.com/hhafzahh/IX-Dimension",
+    githubUrl: "https://github.com/hhafzahh/IX-Dimension",
+    createdAt: "2024-04-01",
+    featured: true,
+  },
+
 ] as const;
 
-// order by featured then newest
 export function getOrderedProjects() {
-  return [...projects].sort((a, b) => {
-    const fa = a.featured ? 1 : 0;
-    const fb = b.featured ? 1 : 0;
-    if (fa !== fb) return fb - fa;
-    return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
-  });
+  return [...projects].sort((a, b) =>
+    new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+  );
 }
