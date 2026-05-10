@@ -37,7 +37,7 @@ export const projects: Project[] = [
     tags: ["Java", "Android Studio", "Firebase"],
     demoUrl: "https://youtu.be/OMz_pUbHsYY",
     githubUrl: "https://github.com/aaj1510/tasktales",
-    createdAt: "2025-10-01",
+    createdAt: "2025-04-01",
     featured: true,
     award: "Singtel Project Award",
   },
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     tags: ["Svelte", "TailwindCSS", "Supabase"],
     demoUrl: "https://lcc.sutd.edu.sg/",
     githubUrl: "https://github.com/hhafzahh/LCC_Website",
-    createdAt: "2025-09-01",
+    createdAt: "2025-01-01",
     featured: true,
     isLive: true,
   },
@@ -151,7 +151,7 @@ export const projects: Project[] = [
       "https://youtu.be/6bo0VFZbQjs",
     githubUrl:
       "https://github.com/yyyyii/esc-project-c3t7",
-    createdAt: "2025-11-01",
+    createdAt: "2025-08-01",
     featured: true,
   },
   {
@@ -163,7 +163,7 @@ export const projects: Project[] = [
     tags: ["Python", "PyTorch", "Deep Learning", "U-Net", "Medical Imaging", "Jupyter"],
     demoUrl: "https://github.com/YoybE/DiabeticRetinopathyDL",
     githubUrl: "https://github.com/YoybE/DiabeticRetinopathyDL",
-    createdAt: "2025-12-01",
+    createdAt: "2026-04-01",
     featured: true,
   },
   {
@@ -175,7 +175,7 @@ export const projects: Project[] = [
     tags: ["C", "AST", "Parsing", "Algorithms", "Makefile"],
     demoUrl: "https://github.com/STHSCare12/PLC_Graphing_Calculator",
     githubUrl: "https://github.com/STHSCare12/PLC_Graphing_Calculator",
-    createdAt: "2024-12-01",
+    createdAt: "2026-04-01",
     featured: true,
   },
   {
