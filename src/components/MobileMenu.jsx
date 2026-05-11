@@ -21,7 +21,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       {["Home", "About", "Projects", "Contact"].map((item) => (
         <a
           key={item}
-          href={`#${item.toLowerCase()}`}
+          href={`/#${item.toLowerCase()}`}
           onClick={() => setMenuOpen(false)}
           className={`text-2xl font-semibold text-[#1a1a1a] my-4 transform transition-all duration-300 hover:text-[#9b7f5e] ${
             menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"

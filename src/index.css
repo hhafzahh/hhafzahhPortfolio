@@ -7,3 +7,35 @@ html, body {
   color: #1a1a1a;
 }
 
+@keyframes blob-float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(30px, -40px) scale(1.08); }
+  66%       { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(72px);
+  opacity: 0.35;
+  animation: blob-float 12s ease-in-out infinite;
+}
+.hero-blob-1 {
+  width: 420px; height: 420px;
+  background: #c9a882;
+  top: -80px; left: -100px;
+  animation-delay: 0s;
+}
+.hero-blob-2 {
+  width: 340px; height: 340px;
+  background: #e8d5c0;
+  bottom: 0; right: -80px;
+  animation-delay: -4s;
+}
+.hero-blob-3 {
+  width: 260px; height: 260px;
+  background: #b8987a;
+  top: 40%; left: 55%;
+  animation-delay: -8s;
+}
+
