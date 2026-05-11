@@ -1,7 +1,14 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink, Github, Award, X, Maximize2 } from "lucide-react";
 import { getProjectBySlug, getOrderedProjects } from "../data/projects";
+
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 24 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5, delay, ease: "easeOut" },
+});
 
 const allProjects = getOrderedProjects();
 
@@ -119,7 +126,7 @@ export const ProjectDetail = () => {
           </div>
 
           {/* Title row */}
-          <div className="flex flex-wrap items-center gap-3 mb-1">
+          <motion.div {...fadeUp(0)} className="flex flex-wrap items-center gap-3 mb-1">
             <h1 className="text-3xl font-bold text-[#1a1a1a]">
               {project.title}
             </h1>
@@ -135,14 +142,14 @@ export const ProjectDetail = () => {
                 Live
               </span>
             )}
-          </div>
+          </motion.div>
 
-          <p className="text-sm text-gray-400 mb-5">
+          <motion.p {...fadeUp(0.08)} className="text-sm text-gray-400 mb-5">
             {formatDate(project.createdAt)}
-          </p>
+          </motion.p>
 
           {/* Tags */}
-          <div className="flex flex-wrap gap-2 mb-8">
+          <motion.div {...fadeUp(0.15)} className="flex flex-wrap gap-2 mb-8">
             {project.tags.map((tag) => (
               <span
                 key={tag}
@@ -151,9 +158,10 @@ export const ProjectDetail = () => {
                 {tag}
               </span>
             ))}
-          </div>
+          </motion.div>
 
           {/* Image(s) + Video */}
+          <motion.div {...fadeUp(0.22)}>
           {project.gallery && project.gallery.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
               {project.gallery.map((img, i) => (
@@ -207,12 +215,13 @@ export const ProjectDetail = () => {
               />
             </div>
           )}
+          </motion.div>
 
           {/* Divider */}
           <hr className="border-gray-100 mb-8" />
 
           {/* Description */}
-          <div className="text-[#4b5563] text-base leading-relaxed mb-10 flex flex-col gap-3">
+          <motion.div {...fadeUp(0.3)} className="text-[#4b5563] text-base leading-relaxed mb-10 flex flex-col gap-3">
             {(project.longDescription ?? project.description)
               .split("\n\n")
               .map((para, i) => {
@@ -251,10 +260,10 @@ export const ProjectDetail = () => {
 
                 return <p key={i}>{trimmed}</p>;
               })}
-          </div>
+          </motion.div>
 
           {/* Links */}
-          <div className="flex flex-wrap gap-3">
+          <motion.div {...fadeUp(0.38)} className="flex flex-wrap gap-3">
             {project.demoUrl && (
               <a
                 href={project.demoUrl}
@@ -277,7 +286,7 @@ export const ProjectDetail = () => {
                 View Code
               </a>
             )}
-          </div>
+          </motion.div>
         </div>
       </div>
 
