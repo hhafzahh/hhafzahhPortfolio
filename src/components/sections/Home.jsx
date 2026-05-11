@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ParticlesBackground } from "../ParticlesBackground";
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 28 },
@@ -12,12 +13,7 @@ export const Home = () => {
       id="home"
       className="min-h-screen overflow-hidden flex items-center justify-center relative"
     >
-      {/* Animated blobs */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="hero-blob hero-blob-1" />
-        <div className="hero-blob hero-blob-2" />
-        <div className="hero-blob hero-blob-3" />
-      </div>
+      <ParticlesBackground />
 
       <div className="text-center z-10 px-4 md:px-8 max-w-2xl w-full mx-auto">
         <motion.h1
