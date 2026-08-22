@@ -165,12 +165,18 @@ export const ProjectDetail = () => {
           {project.gallery && project.gallery.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
               {project.gallery.map((img, i) => (
-                <div key={i} className="rounded-xl overflow-hidden border border-gray-100 shadow-sm h-72">
+                <div key={i} className="relative group rounded-xl overflow-hidden border border-gray-100 shadow-sm h-72">
                   <img
                     src={img}
                     alt={`${project.title} screenshot ${i + 1}`}
                     className="w-full h-full object-cover"
                   />
+                  <button
+                    onClick={() => setLightboxSrc(img)}
+                    className="absolute top-2 right-2 p-1.5 bg-black/40 hover:bg-black/60 text-white rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <Maximize2 size={14} />
+                  </button>
                 </div>
               ))}
               {project.video && (
@@ -207,12 +213,18 @@ export const ProjectDetail = () => {
               </div>
             </div>
           ) : (
-            <div className="rounded-xl overflow-hidden border border-gray-100 shadow-sm mb-8">
+            <div className="relative group rounded-xl overflow-hidden border border-gray-100 shadow-sm mb-8">
               <img
                 src={project.image}
                 alt={project.title}
                 className="w-full max-h-96 object-cover"
               />
+              <button
+                onClick={() => setLightboxSrc(project.image)}
+                className="absolute top-2 right-2 p-1.5 bg-black/40 hover:bg-black/60 text-white rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"
+              >
+                <Maximize2 size={14} />
+              </button>
             </div>
           )}
           </motion.div>

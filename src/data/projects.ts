@@ -13,7 +13,7 @@ import hotelImg from "../assets/hotel.jpeg";
 import ascendaHotelImg from "../assets/ascendaImg.png";
 import ixDimensionImg from "../assets/IX_DIMENSION.png";
 import diabeticAppImg from "../assets/diabetic_app.png";
-import diabeticResultImg from "../assets/diabetic_resultanalysis.png";
+import diabeticPosterImg from "../assets/diabetic_poster.png";
 import taskTalesVideo from "../assets/videos/Team 43_Task Tales.mp4";
 
 export type Project = {
@@ -190,13 +190,13 @@ export const projects: Project[] = [
       "Deep learning system benchmarking six neural network architectures to detect severe Diabetic Retinopathy from fundus retinal photography using PyTorch.",
     longDescription:
       "Diabetic Retinopathy (DR) is a leading cause of preventable blindness worldwide, caused by progressive damage to retinal blood vessels due to prolonged high blood sugar. Early and accurate detection is critical — yet manual screening is time-consuming and requires specialist expertise. This project applies deep learning to automate binary classification of severe DR from fundus retinal photography, making the screening process faster and more accessible.\n\nSix distinct neural network architectures are implemented and benchmarked head-to-head: Baseline U-Net, Attention U-Net, Residual U-Net, Attention + Residual U-Net, EfficientNet-B0 (pretrained on ImageNet), and a U-Net variant without skip connections. The dataset comprises approximately 1,190 retinal images sourced from Kaggle, split into Healthy and Severe DR categories. Models are trained using PyTorch with CUDA acceleration, with Google Colab's T4 GPU supported as an accessible alternative.\n\nEach model is evaluated on accuracy, F1, F2, and anomaly detection metrics. A built-in comparison mode trains all six architectures simultaneously for direct side-by-side benchmarking. Comprehensive visualization tools cover training loss and accuracy curves, segmentation outputs, class distributions, and anomaly detection maps — all saved to structured output directories for straightforward analysis and reporting.",
-    image: diabeticAppImg,
+    image: diabeticPosterImg,
     tags: ["Python", "PyTorch", "Deep Learning", "U-Net", "Medical Imaging", "Jupyter"],
     demoUrl: "https://50039-diabetic-retinopathy-dl.streamlit.app",
     githubUrl: "https://github.com/hhafzahh/diabetic-retinopathy-dl",
     createdAt: "2026-04-01",
     featured: true,
-    gallery: [diabeticAppImg, diabeticResultImg],
+    gallery: [diabeticPosterImg, diabeticAppImg],
     award: "Top Project Selected for Showcase"
   },
   {
